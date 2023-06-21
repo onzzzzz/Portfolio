@@ -20,12 +20,12 @@ const Computers = ({isMobile}) => {
       />
       <primitive 
         object={computer.scene}
-        scale={isMobile ? 0.3 : 0.5}
+        scale={isMobile ? 3 : 5}
         position={isMobile ? [0, 0, 0] : [0,0,0] }
         // rotation={[0,-1,-1 ]}
         // position-y={0}
         rotation-y={-5}
-        // rotation-x={0.5}s
+        rotation-x={5}s
         
 
       />
@@ -50,10 +50,11 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     }
   }, [])
-  return (
+
+return (
     <Canvas
     shadows
-    frameloop="demand"
+    // frameloop="demand"
     camera={{ 
       fov: 25,
       near: 0.1,
@@ -69,8 +70,8 @@ const ComputersCanvas = () => {
       <OrbitControls
       autoRotate="true"
       enableZoom={false}
-      maxPolarAngle={Math.PI / 2 }
-      minPolarAngle={Math.PI / 2}
+      maxPolarAngle={Math.PI / 2}
+      minPolarAngle={Math.PI / 4}
       
 
       />
