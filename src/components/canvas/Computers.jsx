@@ -7,26 +7,29 @@ const Computers = ({isMobile}) => {
   
   const computer = useGLTF('./planet/scene.gltf')
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="purple"/>
-      <pointLight intensity={3}/>
-      <spotLight
-      position={ [ 0 , 10 , -3]}
-      angle={0.32} 
-      penumbra={1}
-      intensity={5}
-      castShadow
-      shadow-mapSize={1024}
-      />
+    // <mesh>
+    //   <hemisphereLight intensity={0.15} groundColor="purple"/>
+    //   <pointLight intensity={3}/>
+    //   <spotLight
+    //   position={ [ 0 , 10 , -3]}
+    //   angle={0.32} 
+    //   penumbra={1}
+    //   intensity={5}
+    //   castShadow
+    //   shadow-mapSize={1024}
+    //   />
       <primitive 
         object={computer.scene}
         scale={isMobile ? 0.05 : 0.1}
-        position={isMobile ? [0, 0, 0] : [0,0,0] }
-        rotation={[0,-1,-1 ]}
+        // position={isMobile ? [0, 0, 0] : [0,0,0] }
+        // rotation={[0,-1,-1 ]}
+        position-y={0}
+        rotation-y={-5}
+        rotation-x={0.5}s
         
 
       />
-    </mesh>
+    // </mesh>
   )
 }
 
@@ -49,16 +52,22 @@ const ComputersCanvas = () => {
   }, [])
   return (
     <Canvas
-    frameloop="demand"
     shadows
-    camera={{ positon: [20, -3 , -5], fov: 5 }}
+    frameloop="demand"
+    camera={{ 
+      fov: 45,
+      near: 0.1,
+      far: 200,
+      position: [-4, 3, 6]
+    }}
+    // camera={{ positon: [20, -3 , -5], fov: 5 }}
     gl={{preserveDrawingBuffer: true }}
     
     >
     
     <Suspense fallback={<CanvasLoader />} >
       <OrbitControls
-      autoRotate
+      autoRotate="true"
       enableZoom={false}
       maxPolarAngle={Math.PI / 2 }
       minPolarAngle={Math.PI / 2}
