@@ -13,9 +13,9 @@ import { slideIn } from '../utils/motion';
 const Contact = () => {
 const formRef = useRef();
 const [form, setForm] = useState({
-  name: '',
-  email: '',
-  message:'',
+  name: "",
+  email: "",
+  message: "",
 })
 const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,10 @@ const handleChange = (e) => {
   const { target } = e;
     const { name, value } = target;
 
-  setForm({ ...form, [name]: value })
+  setForm({ 
+    ...form,
+    [name]: value,
+   })
 };
 
 const handleSubmit = (e) => {
@@ -32,8 +35,8 @@ const handleSubmit = (e) => {
 
   emailjs
     .send(
-      import.process.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.process.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      "service_y30zevg",
+      "template_smr3unv",
       {
         from_name: form.name,
         to_name: "Nina Tche",
@@ -41,30 +44,27 @@ const handleSubmit = (e) => {
         to_email: "ninatwebdev@gmail.com",
         message: form.message,
       },
-      import.process.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      "3eAlNe0zfqVwvpDCX",
     )
 
     .then(
       () => {
-      setLoading(false);
-      alert('Thank you for your message! I will get back as soon as possible.');
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
 
         setForm({
           name: "",
           email: "",
           message: "",
         });
-    }, 
-    (error) => {
-      setLoading(false);
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
 
-      console.error(error);
-
-      alert("Something is wrong. Try to send to ninatwebdev@gmail.com directly")
-
-    }
+        alert("Ahh, something went wrong. Please try again.");
+      }
     );
-  
 };
 
   return (
