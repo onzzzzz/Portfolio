@@ -20,47 +20,52 @@ const [form, setForm] = useState({
 const [loading, setLoading] = useState(false);
 
 const handleChange = (e) => {
-  const { name, value } = e.target;
+  const { target } = e;
+    const { name, value } = target;
 
   setForm({ ...form, [name]: value })
-}
+};
 
 const handleSubmit = (e) => {
   e.preventDefault();
   setLoading(true);
 
-  emailjs.send(
-    'service_y30zevg',
-   'template_smr3unv',
-   {
-    from_name: form.name,
-    to_name: 'Nina Tche',
-    from_email: form.email,
-    to_email: 'ninatwebdev@gmail.com',
-    message: form.message,
-   },
-   '3eAlNe0zfqVwvpDCX' 
-   )
+  emailjs
+    .send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Nina Tche",
+        from_email: form.email,
+        to_email: "ninatwebdev@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    )
 
-  .then(() => {
-    setLoading(false);
-    alert('Thank you for your message! I will get back as soon as possible.');
+    .then(
+      () => {
+      setLoading(false);
+      alert('Thank you for your message! I will get back as soon as possible.');
 
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-   }, (error) => {
-    setLoading(false)
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+    }, 
+    (error) => {
+      setLoading(false);
 
-    console.log(error);
+      console.error(error);
 
-    alert('Something is wrong. Try to send to ninatwebdev@gmail.com directly')
+      alert("Something is wrong. Try to send to ninatwebdev@gmail.com directly")
 
-   })
+    }
+    );
   
-}
+};
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse 
