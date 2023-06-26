@@ -12,7 +12,7 @@ import {
     tailwind,
     nodejs,
     mongodb,
-    git,
+    github,
     figma,
     blender,
     docker,
@@ -24,6 +24,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    nextjs,
+    github2,
   } from "../assets";
   
   export const navLinks = [
@@ -96,8 +98,8 @@ import {
       icon: threejs,
     },
     {
-      name: "git",
-      icon: git,
+      name: "github2",
+      icon: github2,
     },
     {
       name: "figma",
@@ -110,6 +112,10 @@ import {
     {
       name: "blender",
       icon: blender,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
     },
   ];
   
