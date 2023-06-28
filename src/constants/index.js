@@ -235,7 +235,7 @@ import {
         "AI-based application that allows users to create patterns, change colors, and upload custom images on 3D t-shirt model.",
       tags: [
         {
-          name: "react",
+          name: "react 18",
           color: "blue-text-gradient",
         },
         {
@@ -243,7 +243,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwind css",
           color: "pink-text-gradient",
         },
       ],

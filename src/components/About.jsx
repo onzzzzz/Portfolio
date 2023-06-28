@@ -48,7 +48,7 @@ const About = () => {
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I am a Web developer & 3D designer. My expertise extends to frameworks such as React, Node.js,Three.js and  Tailwind CSS.
     </motion.p>
-    <div className='mt-20 flex items-center flex-wrap gap-20  '>
+    <div className='mt-20 flex items-center flex-wrap gap-10  '>
       {services.map((service, index) => (
         <ServiceCard  key={service.title} index={index} {...service} />
       ))}
