@@ -53,13 +53,13 @@ import {
       icon: mobile,
     },
     {
-      title: "3D designer",
+      title: "3D Designer",
       icon: backend,
     },
-    // {
-    //   title: "Content Creator",
-    //   icon: creator,
-    // },
+    {
+      title: "UX writer",
+      icon: creator,
+    },
   ];
   
   const technologies = [
@@ -116,6 +116,10 @@ import {
     {
       name: "Next JS",
       icon: nextjs,
+    },
+    {
+      name: "mongodb",
+      icon: mongodb,
     },
   ];
   
@@ -203,6 +207,29 @@ import {
   
   const projects = [
     {
+      name: "Poetria",
+      description:
+        "Web application to post and edit poems by logging into personl account.",
+      tags: [
+        {
+          name: "react 18",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "next 13",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/onzzzzz/Poetria",
+
+
+    },
+    {
       name: "AI pattern generator for clothes",
       description:
         "AI-based application that allows users to create patterns, change colors, and upload custom images on 3D t-shirt model.",
@@ -224,27 +251,7 @@ import {
       source_code_link: "https://github.com/onzzzzz/aishirtt.git",
       
     },
-    // {
-    //   name: "Job IT",
-    //   description:
-    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    //   tags: [
-    //     {
-    //       name: "react",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "restapi",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "scss",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: jobit,
-    //   source_code_link: "https://github.com/",
-    // },
+    
     // {
     //   name: "Trip Guide",
     //   description:
