@@ -26,6 +26,7 @@ import {
     threejs,
     nextjs,
     github2,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -226,6 +227,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/onzzzzz/Poetria",
+      source_weblink: "https://poetria-eq8beo8md-onzzzzz.vercel.app",
 
 
     },
@@ -249,6 +251,8 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/onzzzzz/aishirtt.git",
+      source_weblink: "",
+      
       
     },
     

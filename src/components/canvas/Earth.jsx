@@ -14,8 +14,9 @@ const Earth = () => {
     object={earth.scene}
     scale={2}
     position-y={0}
-    rotation-y={-5}
-    rotation-x={-0.5}s
+    rotation-y={9}
+    // rotation-x={-0.5}s
+    rotation-x={0.5}s
     direction="left"
     />
   )
