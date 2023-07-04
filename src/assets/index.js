@@ -32,6 +32,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import carimage from "./carimage.png";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   tripguide,
   nextjs,
   weblink,
+  carimage,
 };

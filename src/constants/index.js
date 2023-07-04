@@ -26,6 +26,7 @@ import {
     threejs,
     nextjs,
     github2,
+    carimage,
     
   } from "../assets";
   
@@ -232,7 +233,7 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: jobit,
+      image: carimage,
       source_code_link: "https://github.com/onzzzzz/car",
       source_weblink: "https://car-ten-omega.vercel.app",
 

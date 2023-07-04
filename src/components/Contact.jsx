@@ -98,7 +98,7 @@ return (
             name='email'
             value={form.email}
             onChange={handleChange}
-            placeholder="Your email here?"
+            placeholder="Enter your  email here"
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
           />
         </label>
@@ -109,7 +109,7 @@ return (
             name='message'
             value={form.message}
             onChange={handleChange}
-            placeholder='Your message here'
+            placeholder='Type your message here'
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
           />
         </label>
