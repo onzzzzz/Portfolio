@@ -207,6 +207,37 @@ import {
   ];
   
   const projects = [
+
+    //
+    //
+    {
+      name: "Car Hub",
+      description:
+        "Web application to find, book, rent a car—quick and super easy! ",
+      tags: [
+        {
+          name: "react 18",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "next 13",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "rapid api",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/onzzzzz/car",
+      source_weblink: "https://car-ten-omega.vercel.app",
+
+
+    },
     {
       name: "Poetria",
       description:
