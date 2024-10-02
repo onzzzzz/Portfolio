@@ -35,14 +35,14 @@ import {
       id: "about",
       title: "About",
     },
-    {
-      id: "works",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
+    // {
+    //   id: "works",
+    //   title: "Work",
+    // },
+    // {
+    //   id: "contact",
+    //   title: "Contact",
+    // },
   ];
   
   const services = [

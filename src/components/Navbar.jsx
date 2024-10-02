@@ -23,8 +23,8 @@ const Navbar = () => {
         window.scrollTo(0,0)
       }}
       >
-        <img src={logo} alt="logo"  className=" w-9 h-9 object-contain" />
-        <p className='text-white text-[18px] font-bold cursor-pointer flex'> Nina Tche  &nbsp; <span className='sm:block hidden text-left'> | Web developer</span>
+        <img src={logo} alt="logo"  className=" h-9 object-contain" />
+        <p className='text-tertiary text-[18px] font-bold cursor-pointer flex'> Nina Tche  &nbsp; <span className='sm:block hidden text-left'> | Web developer</span>
         </p>
       </Link> 
       <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -63,7 +63,7 @@ const Navbar = () => {
           key={link.id}
           className={`${
             active === link.title
-            ? "text-white"
+            ? "text-tertiary"
             : "text-secondary"
           } font-poppins font-medium cursor-pointer text-[16px]`}
           onClick={() => {
