@@ -55,11 +55,11 @@ import {
       icon: mobile,
     },
     {
-      title: "3D Designer",
+      title: "UI/UX Designer",
       icon: backend,
     },
     {
-      title: "UX writer",
+      title: "Backend Developer",
       icon: creator,
     },
   ];
